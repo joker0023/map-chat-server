@@ -11,6 +11,7 @@
     		<PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %5p %c:%L[%t] - [%X{trace}]%m%n"/>
     		<Policies>
     			<TimeBasedTriggeringPolicy modulate="true" interval="1"/>
+    			<SizeBasedTriggeringPolicy size="512MB" />
     		</Policies>
     		<DefaultRolloverStrategy max="10"/>
     	</RollingFile>
